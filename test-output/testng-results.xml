@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-15T14:17:22 IST" name="Suite" finished-at="2024-05-15T14:17:53 IST" duration-ms="31506">
+    <groups>
+    </groups>
+    <test started-at="2024-05-15T14:17:22 IST" name="Test" finished-at="2024-05-15T14:17:53 IST" duration-ms="31506">
+      <class name="testcases.CheckOut_TC3">
+        <test-method is-config="true" signature="openApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.CheckOut_TC3@233795b6]" started-at="2024-05-15T14:17:31 IST" name="openApplication" finished-at="2024-05-15T14:17:36 IST" duration-ms="5001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTC_1(java.lang.String,java.lang.String)[pri:0, instance:testcases.CheckOut_TC3@233795b6]" started-at="2024-05-15T14:17:36 IST" name="loginTC_1" data-provider="loginData" finished-at="2024-05-15T14:17:37 IST" duration-ms="623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC_1 -->
+        <test-method signature="addToCartTC_2()[pri:0, instance:testcases.CheckOut_TC3@233795b6]" started-at="2024-05-15T14:17:37 IST" name="addToCartTC_2" finished-at="2024-05-15T14:17:37 IST" depends-on-methods="testcases.Login_TC1.loginTC_1" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC_2 -->
+        <test-method signature="checkoutTC_3(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.CheckOut_TC3@233795b6]" started-at="2024-05-15T14:17:37 IST" name="checkoutTC_3" data-provider="checkoutData" finished-at="2024-05-15T14:17:38 IST" depends-on-methods="testcases.AddToCart_TC2.addToCartTC_2" duration-ms="790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123-446]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTC_3 -->
+      </class> <!-- testcases.CheckOut_TC3 -->
+      <class name="testcases.Login_TC1">
+        <test-method is-config="true" signature="openApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.Login_TC1@682b2fa]" started-at="2024-05-15T14:17:22 IST" name="openApplication" finished-at="2024-05-15T14:17:29 IST" duration-ms="7570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTC_1(java.lang.String,java.lang.String)[pri:0, instance:testcases.Login_TC1@682b2fa]" started-at="2024-05-15T14:17:30 IST" name="loginTC_1" data-provider="loginData" finished-at="2024-05-15T14:17:31 IST" duration-ms="735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC_1 -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.Login_TC1@682b2fa]" started-at="2024-05-15T14:17:53 IST" name="closeApplication" finished-at="2024-05-15T14:17:53 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- testcases.Login_TC1 -->
+      <class name="testcases.AddToCart_TC2">
+        <test-method is-config="true" signature="openApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.AddToCart_TC2@5bda8e08]" started-at="2024-05-15T14:17:46 IST" name="openApplication" finished-at="2024-05-15T14:17:51 IST" duration-ms="5415" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTC_1(java.lang.String,java.lang.String)[pri:0, instance:testcases.AddToCart_TC2@5bda8e08]" started-at="2024-05-15T14:17:52 IST" name="loginTC_1" data-provider="loginData" finished-at="2024-05-15T14:17:52 IST" duration-ms="741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC_1 -->
+        <test-method signature="addToCartTC_2()[pri:0, instance:testcases.AddToCart_TC2@5bda8e08]" started-at="2024-05-15T14:17:52 IST" name="addToCartTC_2" finished-at="2024-05-15T14:17:53 IST" depends-on-methods="testcases.Login_TC1.loginTC_1" duration-ms="620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC_2 -->
+      </class> <!-- testcases.AddToCart_TC2 -->
+      <class name="testcases.Logout_TC4">
+        <test-method is-config="true" signature="openApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.Logout_TC4@3eb738bb]" started-at="2024-05-15T14:17:38 IST" name="openApplication" finished-at="2024-05-15T14:17:44 IST" duration-ms="5412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.saucedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="loginTC_1(java.lang.String,java.lang.String)[pri:0, instance:testcases.Logout_TC4@3eb738bb]" started-at="2024-05-15T14:17:44 IST" name="loginTC_1" data-provider="loginData" finished-at="2024-05-15T14:17:44 IST" duration-ms="600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC_1 -->
+        <test-method signature="addToCartTC_2()[pri:0, instance:testcases.Logout_TC4@3eb738bb]" started-at="2024-05-15T14:17:44 IST" name="addToCartTC_2" finished-at="2024-05-15T14:17:45 IST" depends-on-methods="testcases.Login_TC1.loginTC_1" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC_2 -->
+        <test-method signature="checkoutTC_3(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.Logout_TC4@3eb738bb]" started-at="2024-05-15T14:17:45 IST" name="checkoutTC_3" data-provider="checkoutData" finished-at="2024-05-15T14:17:46 IST" depends-on-methods="testcases.AddToCart_TC2.addToCartTC_2" duration-ms="947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rajesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kumar]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[123-446]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutTC_3 -->
+        <test-method signature="clickFinishTC_4()[pri:0, instance:testcases.Logout_TC4@3eb738bb]" started-at="2024-05-15T14:17:46 IST" name="clickFinishTC_4" finished-at="2024-05-15T14:17:46 IST" depends-on-methods="testcases.CheckOut_TC3.checkoutTC_3" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFinishTC_4 -->
+      </class> <!-- testcases.Logout_TC4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
