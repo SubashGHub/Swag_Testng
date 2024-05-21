@@ -7,7 +7,7 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -35,7 +35,7 @@ public class SW_BaseClass {
 		driver.manage().window().maximize();
 	}
 	
-	@AfterTest
+	@AfterClass
 	public void closeApplication() {
 		driver.close();
 	}
